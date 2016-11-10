@@ -10,7 +10,8 @@
 #import "jingdi.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *label;
+//缓存高度所用字典
+@property (nonatomic, strong) NSMutableDictionary *heightAtIndexPath;
 
 @end
 
@@ -49,6 +50,19 @@
     return cell;
 }
 
-
-
+#pragma mark - UITableViewDelegate
+// 然后在调用estimatedHeightForRowAtIndexPath方法时，先去字典查看有没有缓存高度，有就返回，没有就返回一个大概高度
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSNumber *height = [self.heightAtIndexPath objectForKey:indexPath];
+    if (height) {
+        return height.floatValue;
+    } else {
+        return 100;
+    }
+}
+// cell将要显示的时候在字典中保存这行cell的高度
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSNumber *height = @(cell.frame.size.height);
+    [self.heightAtIndexPath setObject:height forKey:indexPath];
+}
 @end
