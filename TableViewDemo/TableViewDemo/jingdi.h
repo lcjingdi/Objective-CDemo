@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  jingdi.h
 //  TableViewDemo
 //
 //  Created by jingdi on 2016/11/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
-
+@interface jingdi : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @end
-

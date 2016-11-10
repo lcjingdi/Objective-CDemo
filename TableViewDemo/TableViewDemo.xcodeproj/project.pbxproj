@@ -13,6 +13,8 @@
 		1F89BA7C1DD412820041A077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F89BA7A1DD412820041A077 /* Main.storyboard */; };
 		1F89BA7E1DD412820041A077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F89BA7D1DD412820041A077 /* Assets.xcassets */; };
 		1F89BA811DD412820041A077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F89BA7F1DD412820041A077 /* LaunchScreen.storyboard */; };
+		1F89BA8A1DD423420041A077 /* jingdi.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F89BA891DD423420041A077 /* jingdi.xib */; };
+		1F89BA8D1DD4244E0041A077 /* jingdi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F89BA8C1DD4244E0041A077 /* jingdi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		1F89BA7D1DD412820041A077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F89BA801DD412820041A077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F89BA821DD412820041A077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F89BA891DD423420041A077 /* jingdi.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = jingdi.xib; sourceTree = "<group>"; };
+		1F89BA8B1DD4244E0041A077 /* jingdi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jingdi.h; sourceTree = "<group>"; };
+		1F89BA8C1DD4244E0041A077 /* jingdi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jingdi.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +63,10 @@
 		1F89BA701DD412820041A077 /* TableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F89BA881DD413FB0041A077 /* DynamicCellHeight */,
 				1F89BA741DD412820041A077 /* AppDelegate.h */,
 				1F89BA751DD412820041A077 /* AppDelegate.m */,
-				1F89BA771DD412820041A077 /* ViewController.h */,
-				1F89BA781DD412820041A077 /* ViewController.m */,
 				1F89BA7A1DD412820041A077 /* Main.storyboard */,
-				1F89BA7D1DD412820041A077 /* Assets.xcassets */,
-				1F89BA7F1DD412820041A077 /* LaunchScreen.storyboard */,
-				1F89BA821DD412820041A077 /* Info.plist */,
 				1F89BA711DD412820041A077 /* Supporting Files */,
 			);
 			path = TableViewDemo;
@@ -74,9 +75,24 @@
 		1F89BA711DD412820041A077 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F89BA7D1DD412820041A077 /* Assets.xcassets */,
+				1F89BA7F1DD412820041A077 /* LaunchScreen.storyboard */,
+				1F89BA821DD412820041A077 /* Info.plist */,
 				1F89BA721DD412820041A077 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F89BA881DD413FB0041A077 /* DynamicCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				1F89BA8B1DD4244E0041A077 /* jingdi.h */,
+				1F89BA8C1DD4244E0041A077 /* jingdi.m */,
+				1F89BA891DD423420041A077 /* jingdi.xib */,
+				1F89BA771DD412820041A077 /* ViewController.h */,
+				1F89BA781DD412820041A077 /* ViewController.m */,
+			);
+			name = DynamicCellHeight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F89BA8A1DD423420041A077 /* jingdi.xib in Resources */,
 				1F89BA811DD412820041A077 /* LaunchScreen.storyboard in Resources */,
 				1F89BA7E1DD412820041A077 /* Assets.xcassets in Resources */,
 				1F89BA7C1DD412820041A077 /* Main.storyboard in Resources */,
@@ -151,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F89BA8D1DD4244E0041A077 /* jingdi.m in Sources */,
 				1F89BA791DD412820041A077 /* ViewController.m in Sources */,
 				1F89BA761DD412820041A077 /* AppDelegate.m in Sources */,
 				1F89BA731DD412820041A077 /* main.m in Sources */,
